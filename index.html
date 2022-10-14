@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <img src="images/light-logo.png" alt="">
+            </div>
+            <div class="header_top">
+                <div class="info">
+               
+                    <span><i class="fa-solid fa-envelope"></i> <strong> info@example.com </strong></span>
+                    <span><i class="fa-solid fa-phone"></i> <a href="tel:1300 406 741">1300 406 741</a> </span>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">projects</a></li>
+                    <li><a href="">testimonial</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="" class="bttn">get quote</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="header_mid">
+        <div class="background-overlay"></div>
+        <div class="inner">
+            <div class="c1">        
+            <h1>Moving House Service in Melbourne</h1>
+            <p>Providing High-Quality Professional House Moving, Furniture Moving, And Storage Services For Over A Decade </p>
+            <button class="custom-btn btn-7"><span>Request a call  back</span></button>
+            <button class="custom-btn btn-7"><span>Get a quote</span></button>
+        </div>
+        <div id="c2">
+            <h2>Request a FREE Quote Now</h2>
+            <form action="phpmail.php" method="post">
+              <input
+                type="text"
+                name="name"
+                placeholder=" Name"
+                id="name"
+                required
+              />
+              <input
+                type="tel"
+                name="tel"
+                placeholder="phone number"
+                id="phone"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                id="email"
+                required
+              />
+              <input
+                type="text"
+                name="date"
+                placeholder="Moving date?"
+                onfocus="(this.type='date')"
+                id="date" 
+                required
+              />
+              <input
+                type="text"
+                name="from"
+                placeholder="moving from?"
+                id="from"
+                required
+              />
+              <input
+                type="text"
+                name="to"
+                placeholder="Moving to?"
+                id="to"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="tell us your requirement"
+                required
+                class="textarea1"
+              ></textarea>
+
+              <button class="btn" name="submit" data-submit="...Sending">
+                Get quote
+              </button>
+            </form> 
+           
+           </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" ></script>
+</body>
+</html>
