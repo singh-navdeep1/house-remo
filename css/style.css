@@ -597,7 +597,7 @@ form textarea:focus {
 }
 .bt1 {
   border: 0;
-  display: inline-block !important;
+  display: none !important;
   writing-mode: vertical-rl; 
   padding: 30px 10px;
   position: fixed;
