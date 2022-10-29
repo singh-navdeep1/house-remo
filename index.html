@@ -1,140 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
     <header>
-      <div class="inner">
         <div class="logo">
-          <img src="images/logo.png" alt="" />
+            <img src="images/logo.png" alt="">
         </div>
-        <a href="tel:1300 406 741" class="bttn show_mobile">call now</a>
-        <div class="header_top show_desktop">
-          <div class="info">
-            <span
-              ><i class="fa-solid fa-envelope"></i>
-              <strong> info@example.com </strong></span
-            >
-            <span
-              ><i class="fa-solid fa-phone"></i>
-              <a href="tel:1300 406 741">1300 406 741</a>
-            </span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="" class="colr">Home</a></li>
-              <li><a href="">about</a></li>
-              <li><a href="">Service</a></li>
-              <li><a href="">contact us</a></li>
-             
-              <li><a href="" class="bttn">get quote</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
-    <div class="header_mid">
-      <div class="background-overlay"></div>
-      <div class="inner">
-        <div class="c1">
-          <h1>Best Melbourne Removalists </h1>
-          <p>
-            Providing High-Quality Professional House Moving, Furniture Moving,
-            And Storage Services For Over A Decade
-          </p>
-          <a class="custom-btn btn-7 show_desktop" >
-            <span>Request a call back</span>
-          </a>
-          <a class="custom-btn btn-7 show_desktop"><span>Get a quote</span></a>
-          <a href="tel:1300 406 741" class="custom-btn btn-7 show_mobile"><span><i class="fa-solid fa-phone"></i> 1300 406 741</span></a>
+    <div class="header-mid">
+        <div class="background-overlay"></div>
+        <div class="inner">
+            <div class="c1">
+                <h1>
+                    Best Melbourne Removalists </h1>
+                    <p>Providing High-Quality Professional House Moving, Furniture Moving, And Storage Services For Over A Decade</p>
+                    <button class="btn" onclick="window.location.href = 'https://www.youtube.com';"> contact us</button>
+            </div>
+            <div class="c2">
+                <h2>Request a FREE Quote Now</h2>
+                <form action="phpmail.php" method="post">
+                    <div class="in">
+                  <label for="Name" class="label"> Your full Name </label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="in">
+                    <label for="Name" class="label"> Phone Number </label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="phone"
+                    required
+                  />
+                </div>
+                <div class="in">
+                    <label for="Name" class="label"> Your Email </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                  /> 
+                  </div>
+                  <div class="in">
+                    <label for="Name" class="label"> Date </label>
+                   <input
+                    type="text"
+                    name="date"
+                    onfocus="(this.type='date')"
+                    id="date"
+                    required
+                  /> 
+                  </div>
+                  <div class="in">
+                    <label for="From" class="label"> Moving from? </label>
+                   <input
+                    type="text"
+                    name="from"
+                    id="from"
+                    required
+                  />
+                  </div>
+                  <div class="in">
+                    <label for="to" class="label"> Moving to?  </label>
+                  <input
+                    type="text"
+                    name="to"
+                    id="to"
+                    required
+                  />
+                  </div>
+                  <div class="message">
+                    <label for="Message" class="label"> Your Message </label>
+                  <textarea
+                    name="message"
+                    required
+                    class="textarea1"
+                  ></textarea>
+                  </div>
+      
+                  <button class="btn1" name="submit" data-submit="...Sending">
+                    Get quote
+                  </button>
+                </form>
+              </div>
         </div>
-        <div id="c2">
-          <h2>Request a FREE Quote Now</h2>
-          <form action="phpmail.php" method="post">
-            <input
-              type="text"
-              name="name"
-              placeholder=" Name"
-              id="name"
-              required
-            />
-            <input
-              type="tel"
-              name="tel"
-              placeholder="phone number"
-              id="phone"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="email"
-              id="email"
-              required
-            />
-            <input
-              type="text"
-              name="date"
-              placeholder="Moving date?"
-              onfocus="(this.type='date')"
-              id="date"
-              required
-            />
-            <input
-              type="text"
-              name="from"
-              placeholder="moving from?"
-              id="from"
-              required
-            />
-            <input
-              type="text"
-              name="to"
-              placeholder="Moving to?"
-              id="to"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="tell us your requirement"
-              required
-              class="textarea1"
-            ></textarea>
-
-            <button class="btn" name="submit" data-submit="...Sending">
-              Get quote
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="clearfix"></div>
     </div>
-    <section id="logosec">
+    <section class="logosec">
       <div class="inner">
-        <div class="sec1">
-          <div class="gallery">
-            <img src="images/logo/review-pro.jpg" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="images/logo/logo-google-1.webp" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="images/logo/logo-facebook-1.webp" alt="" />
-          </div>
-        </div>
-        <div class="sec1">
+        <div class="sec1"> 
           <div class="gallery">
             <img src="images/logo/badge-0-1.webp" alt="" />
           </div>
-
           <div class="gallery">
             <img src="images/logo/badge-2-1.webp" alt="" />
           </div>
@@ -145,276 +113,178 @@
             <img src="images/logo/4-icon-top.jpg" alt="" />
           </div>
         </div>
-
-        <div class="clearfix"></div>
       </div>
     </section>
-
-    <section class="service">
+    <section class="contact-sec">
       <div class="inner">
-        <h2 class="heading">our <span class="colr">service </span></h2>
+        <div class="logo1">
+        
+          <img src="images/logo/logo-google-1.webp" alt="">
+          <!-- <img src="images/logo/review-pro.jpg"  alt="" > -->
+          <button class="btn2" onclick="window.location.href = 'https://www.youtube.com';"> Quick qoute</button>
+        </div>
+        <div class="c3">
+          <h3>Call <a href="" class="colr"> 0333 800 2323 </a> or email <span class="colr"> quote@alexandersgroup.co.uk </span> for a free, no-obligation quote.</h3>
+        </div>
+        <div class="logo2">
+          <img src="images/logo/review-pro.jpg"  alt="" >
+          <button class="btn2" onclick="window.location.href = 'https://www.youtube.com';"> Quick qoute</button>
+        </div>
+        
+      </div>
+     
+    </section>
+    <section class="service" >
+      <div class="inner">
+        <h2>our service</h2>
         <div class="boxsec">
-          <div class="box1">
-            <div class="sev-img">
-              <img src="images/ser4.jpg" alt="" />
-            </div>
-            <div class="sev-con">
-              <h3>House Removal</h3>
-              <p>
-                Aires understands that you are not just moving house; you are changing your entire life. Your project management skills can be tested when you move to a new home. It can be overwhelming to manage all the details and organize everything. This can lead to headaches. Get in touch with one of our moving experts to help you plan a successful move. Get a Free Quote for the House removal.
-              </p>
-              <a href="" class="btn1">get quote</a>
-            </div>
-          </div>
-          <div class="box1">
-            <div class="sev-img">
-              <img src="images/ser4.jpg" alt="" />
-            </div>
-            <div class="sev-con">
-              <h3>Furniture Removal</h3>
-              <p>
-                Aires relocations are the top choice when it comes to moving furniture from one place to another. We are well-trained and experienced in handling all types of furniture, including heavy and delicate items. They know how to properly pack and load furniture onto trucks or trailers, and they can also disassemble and reassemble furniture if necessary. Furniture Removalists can make the process of moving furniture much simpler and less stressful. 
-              </p>
-              <a href="" class="btn1">get quote</a>
-            </div>
-          </div>
-          <div class="box1">
-            <div class="sev-img">
-              <img src="images/ser4.jpg" alt="" />
-            </div>
-            <div class="sev-con">
-              <h3>Last Minute Removals</h3>
-              <p>
-                Aires Relocations is a local removals company that specializes in last-minute removals. We understand that sometimes life can get in the way and you might not have time to plan your move in advance. Whether you've had a change of plans or you're simply running out of time, we can help. We are always happy to go the extra mile to make sure your move is as stress-free as possible. 
-              </p>
-              <a href="" class="btn1">get quote</a>
-            </div>
-            </div>
-            <div class="box1">
-              <div class="sev-img">
-                <img src="images/ser4.jpg" alt="" />
-              </div>
-              <div class="sev-con">
-                <h3>Apartment Relocations Services</h3>
-                <p>
-                  Aires Relocations is a local removals company that specializes in last-minute removals. We understand that sometimes life can get in the way and you might not have time to plan your move in advance. Whether you've had a change of plans or you're simply running out of time, we can help. We are always happy to go the extra mile to make sure your move is as stress-free as possible. 
-                </p>
-                <a href="" class="btn1">get quote</a>
-              </div>
-          </div>
-          <div class="box1">
-            <div class="sev-img">
-              <img src="images/ser4.jpg" alt="" />
-            </div>
-            <div class="sev-con">
-              <h3>Apartment Relocations Services </h3>
-              <p>
-                Aires Relocations is a local removals company that specializes in last-minute removals. We understand that sometimes life can get in the way and you might not have time to plan your move in advance. Whether you've had a change of plans or you're simply running out of time, we can help. We are always happy to go the extra mile to make sure your move is as stress-free as possible. 
-              </p>
-              <a href="" class="btn1">get quote</a>
-            </div>
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>house Removalists</h3>
+          <p>Aires relocations are professionals who help people move their belongings from one home to another. We are specialists in packing up and transporting large items, such as furniture and appliances, but can also provide assistance with smaller items, such as boxes and suitcases.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
         </div>
         <div class="box1">
-          <div class="sev-img">
-            <img src="images/ser4.jpg" alt="" />
-          </div>
-          <div class="sev-con">
-            <h3>Apartment Relocations Services</h3>
-            <p>
-              Aires Relocations is a local removals company that specializes in last-minute removals. We understand that sometimes life can get in the way and you might not have time to plan your move in advance. Whether you've had a change of plans or you're simply running out of time, we can help. We are always happy to go the extra mile to make sure your move is as stress-free as possible. 
-            </p>
-            <a href="" class="btn1">get quote</a>
-          </div>
-      </div>
+          <div class="bgoverlay"></div>
+          <h3> Melbourne Removalists</h3>
+          <p>Relocations can be a daunting task, especially if you have a lot of furniture or heavy items to move. However, with the help of a professional removalist company in Melbourne like Aires Relocation, you can rest assured that your move will go smoothly. Contact Us And Request a Free Quote Now.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
         </div>
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>Cheap Removalists</h3>
+          <p>Aires Relocations is a professional removalist company that offers its services at an affordable price. The company has been in operation for over 10 years and has a team of experienced and qualified removalists who are capable of handling all types of moves.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div>
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>Man With Van</h3>
+          <p>If you're looking for a man with a van service in Australia, then you've come to the right place. We're able to move houses, offices, and even single items with ease. We have a wide range of vehicles to choose from, so you can rest assured that we have the right one for your needs.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div>
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>Furniture Removals</h3>
+          <p>Looking for a reliable furniture removal company? Look no further than Aires Relocations. We offer a wide range of services to make your move as smooth and stress-free as possible. We can handle all types of furniture, from large pieces of furniture like couches and beds to smaller items.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div>
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3> packing Removalists</h3>
+          <p>Aires relocations are professionals who help people move their belongings from one home to another. We are specialists in packing up and transporting large items, such as furniture and appliances, but can also provide assistance with smaller items, such as boxes and suitcases.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div>
+         <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>two men and truck</h3>
+          <p>Aires relocations are professionals who help people move their belongings from one home to another. We are specialists in packing up and transporting large items, such as furniture and appliances, but can also provide assistance with smaller items, such as boxes and suitcases.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div> 
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>storage Service</h3>
+          <p>Aires relocations are professionals who help people move their belongings from one home to another. We are specialists in packing up and transporting large items, such as furniture and appliances, but can also provide assistance with smaller items, such as boxes and suitcases.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div> 
+        <div class="box1">
+          <div class="bgoverlay"></div>
+          <h3>office Removalists</h3>
+          <p>Aires Relocation has been providing office relocation services for over 10 years. We are a family-owned and operated business, and we take pride in our work. We understand that moving an office can be a stressful time for businesses, so we offer a comprehensive range of services to make the process smooth.</p>
+          <button class="boxbtn" onclick="openPopup()">
+            Get quote
+          </button>
+        </div> 
       </div>
+     
+    </div>
     </section>
-    <div class="container show_desktop">
-      <button class="bt1" id="open">Get a free quote</button>
-    </div><!-- .container -->
-    
-    <div class="slidein">
-      <span class="close"><i class="fa fa-times"></i></span>
-      <form class="form" action="phpmail.php" method="post">
-        <input
+     <!-- popup-form -->
+     <div class="backdrop">
+     <div class="popup" id="popup"> 
+      <h2>contact-us</h2>
+      <button class="close-btn" onclick="closebutton()" >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <form action="phpmail.php" method="post">
+          <input
           type="text"
           name="name"
-          placeholder=" Name"
+          placeholder="Your full Name"
           class="input"
           required
         />
         <input
           type="tel"
           name="tel"
-          placeholder="phone number"
+          placeholder="Phone number"
           class="input"
           required
         />
         <input
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Your Email"
           class="input"
           required
-        />
-        <input
-          type="text"
-          name="date"
-          placeholder="Moving date?"
-          onfocus="(this.type='date')"
-          class="input"
-          required
-        />
-        <input
-          type="text"
-          name="from"
-          placeholder="moving from?"
-          class="input"
-          required
-        />
-        <input
-          type="text"
-          name="to"
-          placeholder="Moving to?"
-          class="input"
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="tell us your requirement"
-          required
-          class="input"
-        ></textarea>
-
-        <button class="btn" name="submit" data-submit="...Sending">
+        /> 
+        <select name="service" id="service" form="" required>
+          <option value="" hidden>Choose a service </option>
+          <option value="House Removals">House Removals</option>
+          <option value="Melbourne Removalists">Melbourne Removalists</option>
+          <option value="Cheap Removalists">Cheap Removalists</option>
+          <option value="Furniture Removals">Furniture Removals</option>
+          <option value="Man With Van">Packing service</option>
+          <option value="Man With Van">two men and truck</option>
+          <option value="Man With Van">Storage Removalists</option>
+          <option value="Man With Van">Office Removalists</option>
+          <option value="Other service">Other service</option>
+        </select>
+       
+       
+        <button class="btn1" name="submit" data-submit="...Sending">
           Get quote
         </button>
       </form>
-    
-    </div><!-- .slideout -->
-    <section class="whyus">
+  </div>
+</div>
+<section class="contact-sec">
   <div class="inner">
-    <h2 class="heading ">why <span class="colr"> choose  </span> us</h2>
-    <div class="boxsec">
-    <div class="box2">
-      <img src="images/15+experience.png" alt="">
-      <h2>10+ Years of Experience </h2>
-      <div class="line"></div>
-      <p>Melbourne central movers provide a perfect moving solution to individuals and businesses. With over a decade of expertise, we offer professional and seamless moving services to any destination.</p>
-    </div>
-    <div class="box2">
-      <img src="images/week-availability.png" alt="">
-      <h2>7 Days Availability a Week </h2>
-      <div class="line"></div>
-      <p>We are available 7 days a week to assist you with your relocation. We offer Melbourne clients with high-quality, flexible, and cost-effective home, office, and furniture moving services.</p>
-    </div>
-    <div class="box2">
-      <img src="images/no-hidden-cost.png" alt="">
-      <h2>No Hidden Cost </h2>
-      <div class="line"></div>
-      <p>Our prices are reasonable and include no hidden fees or charges. We specify all prices upfront, so there are no unpleasant surprises at the completion of the work</p>
-    </div>
-    <div class="box2">
-      <img src="images/written-communication.png" alt="">
-      <h2>Written Communication </h2>
-      <div class="line"></div>
-      <p>It is our responsibility to do an inventory of all of your things and give you written estimations. Whatever verbal communication we do, we take care to provide you with accurate written information to ensure a seamless transition is accomplished.</p>
-    </div>
-    <div class="box2">
-      <img src="images/large-truck.png" alt="">
-      <h2>Large Fleet of Truck </h2>
-      <div class="line"></div>
-      <p>We have a large fleet of moving trucks and all the necessary advanced equipment and supplies for a safe and smooth relocation. We guarantee that our valued customers get superior service on a regular basis.</p>
-    </div>
-    <div class="box2">
-      <img src="images/equipment.png" alt="">
-      <h2>Use Best Equipment </h2>
-      <div class="line"></div>
-      <p>We use cutting-edge technology and equipment, which enables us to perform the job swiftly and effectively. Our primary goal is client happiness, and we work hard to offer you with the best removal and storage services possible.</p>
-    </div>
-
-    </div>
-      </div>
-
-    </section>
-    <section class="contact-us" id="contact">
-      <div class="background-overlay1"></div>
-      <div class="inner">
-       
-        <div id="c7">
-          <form id="form2" action="phpmail.php" method="post">
-            <h2>request a quote</h2>
-            <input
-              type="text"
-              name="name"
-              placeholder="name"
-              id="name2"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="email"
-              id="email2"
-              required
-            />
-            <input
-              type="tel"
-              name="tel"
-              placeholder="phone number"
-              id="phone2"
-              required
-            />
-            <input
-              type="text"
-              name="date"
-              placeholder="Moving date?"
-              onfocus="(this.type='date')"
-              id="date1"
-              required
-            />
-            <input
-              type="text"
-              name="from"
-              placeholder="moving from?"
-              id="from1"
-              required
-            />
-            <input
-              type="text"
-              name="to"
-              placeholder="Moving to?"
-              id="to1"
-              required
-            />
-            <textarea
-              placeholder="describe your item here"
-              name="message"
-              class="textarea"
-              required
-            ></textarea>
-
-          
-        <button
-            class="bttn bt"
-            name="submit" data-submit="...Sending"
-          >
-            Submit Now
-          </button>
-        </form>  
-        
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </section> 
-
+    <div class="logo1">
     
+      <img src="images/logo/logo-google-1.webp" alt="">
+      <!-- <img src="images/logo/review-pro.jpg"  alt="" > -->
+      <button class="btn2" onclick="window.location.href = 'https://www.youtube.com';"> Quick qoute</button>
+    </div>
+    <div class="c3">
+      <h3>Call <a href="" class="colr"> 0333 800 2323 </a> or email <span class="colr"> quote@alexandersgroup.co.uk </span> for a free, no-obligation quote.</h3>
+    </div>
+    <div class="logo2">
+      <img src="images/logo/review-pro.jpg"  alt="" >
+      <button class="btn2" onclick="window.location.href = 'https://www.youtube.com';"> Quick qoute</button>
+    </div>
     
-  
+  </div>
+ 
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" ></script>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js">
-    </script>
-  </body>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" ></script>
+</body>
 </html>
