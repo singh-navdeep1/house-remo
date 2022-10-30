@@ -15,14 +15,77 @@ header{
     width: 100%;
     float: left;
     background-color: #000;
+    /* position: fixed;
+    top: 0;
+    z-index: 1000; */
 }
 .logo{
     width: 20%;
     float: left;
+    padding: 2% 0;
 }
 .logo img{
     width: 90%;
 }
+nav {
+    width: 80%;
+    height: 100%;
+    float: left;
+    position: relative;
+    top: 0%;
+  }
+
+    .navlinks {
+        width: 100vw;
+        height: 100vh;
+       display: none;
+        position: absolute;
+        top: 105%;
+        left: -27%;
+        z-index: 1000;
+        background-color: rgba(38,51,54, .9);
+        transform: translatey(-890px);
+          /* visibility: hidden; */
+        transition: all  0.5s ease-in;
+      } 
+ 
+  nav ul li {
+    margin-top: 2%;
+    list-style: none;
+  }
+  
+  .mobile-menu{
+    display: block;
+    transform: translatey(0px);
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+  }
+  nav ul li a:hover {
+    color: #bb0b0b;
+  }
+  #toggle{
+    width: 80px;
+    height:80px;
+    float: right;
+    margin-top: 4%;
+    cursor: pointer;
+    display: block;
+    margin-right: 5%;
+  }
+  .togglebtn{
+    width: 100%;
+    height: 8px;
+    margin-top: 4px;
+    background: #fff;
+  }
+  
 .header-mid{
     width: 100%;
     height: auto;
@@ -80,7 +143,7 @@ header{
     float: left;
     background-color: rgba(83, 86, 90, .8);
     position: relative;
-    z-index: 1000;
+    z-index: 100;
     margin: 5% 0%;
     margin-left: 13%;
     padding: 2% 0;
@@ -219,9 +282,9 @@ font-weight: 500;
     font-size: 16px;
     font-weight: 400;
     border: #53565A;
-    margin-left: 12%;
-    border-radius: 20px;
-    margin-top: 2%; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px; 
     cursor: pointer;
 }
 .colr{
@@ -231,14 +294,26 @@ font-weight: 500;
     width: 100%;
     height: auto;
     float: left;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
     position: relative;
 }
+.background-overlay1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
 .service h2{
-    color: #000;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-size: 42px;
+    position: relative;
+    z-index: 100;
 }
 .boxsec{
     width: 100%;
@@ -254,7 +329,7 @@ background: url(../images/1.jpg);
 background-position: top center;
 background-size: cover;
 position: relative;
-margin: 3% 0;
+margin: 1% 0;
 padding-top: 2%;
 }
 .bgoverlay{
@@ -309,7 +384,7 @@ padding-top: 2%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 9999;
   }
   .grey{
     color:#ccc !important;
@@ -322,7 +397,7 @@ padding-top: 2%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1000;
+    z-index: 9999;
     padding: 2% 0;
     border: 1px #fff solid;
     transition: 0.4s all ease;
@@ -390,4 +465,660 @@ visibility: visible;
     border-radius: 20px;
     cursor: pointer;
   }
+ .con1{
+    width: 100%;
+    height: auto;
+    float: left;
+ }
+ .c4{
+    width: 50%;
+    height: 660px;
+    float: left;
+    background-color: #78BE3C;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .c4 h4{
+    width: 70%;
+    margin-left: 10%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 2% 10%;
+ }
+.c4 p{
+    width: 70%;
+    margin-left: 12%;
+    color: #fff;
+    font-size: 22px;
+    padding: 2% 6%;
+    line-height: 36px;
+}
+ .c5{
+    width: 50%;
+    height: 660px;
+    background-image: url(../images/Alexanders-Group-Home-2.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+ }
+ .c7{
+    width: 50%;
+    height: 700px;
+    float: left;
+    background-color: #53565A;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .c7 h4{
+    width: 70%;
+    margin-left: 10%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 2% 10%;
+ }
+.c7 p{
+    width: 70%;
+    margin-left: 12%;
+    color: #fff;
+    font-size: 18px;
+    padding: 2% 5%;
+}
+ .c6{
+    width: 50%;
+    height: 700px;
+    background-image: url(../images/Alexanders-Home-3.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+ }
+ .reviews{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-image: url(../images/removals-and-storage-london.jpg);
+    background-position: center;
+    position: relative;
+    top: 0;
+ }
+ .background-overlay2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(38,51,54, .8);
+}
+ .c8{
+    width: 70%;
+    height: auto;
+    float: left;
+    padding-top: 10%;
+  margin-left: 15%;
+    position: relative;
+    z-index: 100;
+ }
+ .c8 h4{
+    color: #fff;
+    font-size: 36px;
+    margin: 2% 0;
+ }
+ .c8 p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 2% 0;
+ }
+ .c8 img{
+    display: block;
+    margin:2% auto;
+ }
+
+.contact-us{
+    width: 100%;
+    float: left;
+    background: url(../images/antiques-removals-1.jpg);
+    background-size: cover;
+    position: relative;
+    top: 0;
+}
+.contact-form{
+    width: 46%;
+    float: right;
+    background-color: rgba(83, 86, 90);
+    position: relative;
+    z-index: 100;
+    margin: 5% 5%;
+    padding: 2% 0;
+    border: 2px #78BE3C solid;
+}
+.contact-form h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-family: 700;
+    margin: 3% 0;
+  }
+  input:focus,
+  .textarea1:focus {
+    outline: 0;
+  }
+  /* input,textarea{
+    color:#Fff;
+    padding-left: 2%;
+    font-size: 16px;
+  } */
+  .in{
+    width: 46%;
+    float: left;
+    margin-top: 2%;
+  }
+  .label{
+    color: #ccc;
+    float: left;
+    font-size: 14px;
+    padding-left: 12%;
+    margin-bottom: 2%;
+} 
+ .input-sec{
+    width: 90%;
+    height: 35px;
+    margin:0% 13%;
+    padding-left: 2%;
+    color: #fff;
+    background: transparent;
+    border:  solid  1px #ffff;
+} 
+.message{
+    width: 87%;
+    float: left; 
+    margin-top: 2%;
+}
+.message label{
+    padding-left: 7% ;
+}
+.textarea1{
+    width: 100%;
+    height: 80px;
+    margin-top: 0%;
+    margin-left: 7%;
+    background: transparent;
+    border:  solid  1px #ffff;
+}
+.btn1{
+    padding: 12px 38px;
+    background-color: #78BE3C;
+    color: #E0F0D2;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    border: #53565A;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-left: 36%;
+    cursor: pointer;
+}
+
+
+
+ .show-desktop{
+    display: block;
+}
+.show-mobile{
+    display: none;
+}
+ @media screen and (min-width: 350px) and (max-width: 768px){
+    .show-desktop{
+        display: none !important;
+    }
+    .show-mobile{
+        display: block;
+    }
+    header{
+        width: 100%;
+        float: left;
+        background-color: #000;
+        /* position: fixed;
+        top: 0;
+        z-index: 1000; */
+    }
+    .logo{
+        width: 40%;
+        float: left;
+        padding: 6% 0;
+    }
+    .logo img{
+        width: 100%;
+    }
+    nav {
+        width: 60%;
+        height: 100%;
+        float: left;
+        position: relative;
+        top: 0%;
+      }
+    
+        .navlinks {
+            width: 100vw;
+            height: 100vh;
+           display: none;
+            position: absolute;
+            top: 103%;
+            left: -67%;
+            z-index: 1000;
+            background-color: rgba(38,51,54, .9);
+            /* transform: translatey(-890px); */
+              /* visibility: hidden; */
+            transition: all 0.5s ease-in;
+          } 
+     
+      .mobile-menu{
+        display: block;
+        transform: translatey(0px);
+      }
+      nav ul li a {
+        font-size: 32px;
+      }
+      nav ul li a:hover {
+        color: #bb0b0b;
+      }
+      #toggle{
+        width: 60px;
+        height:60px;
+        float: right;
+        padding-top: 5%;
+        cursor: pointer;
+        display: block;
+      }
+      .togglebtn{
+        width: 100%;
+        height: 6px;
+        margin-top: 4px;
+        background: #fff;
+      }
+      
+    .header-mid{
+        width: 100%;
+        height: auto;
+        float: left;
+        background-image: url(../images/banner.jpg);
+        position: relative;
+    }
+    .background-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+    }
+    .inner{
+        width: 100%;
+        margin: auto;
+    }
+    .c1{
+        width: 100%;
+        height: auto;
+    }
+    .c1 h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .c1 p{
+        font-size: 20px;
+        margin: 4% 0;
+        padding: 0 5%;
+    }
+    .btn{
+        padding: 14px 32px;
+        background-color: #53565A;
+       display: block;
+       font-size: 22px;
+       margin: 0 auto;
+    }
+    .c2{
+        width: 95%;
+        float: left;
+        background-color: rgba(83, 86, 90, .8);
+        margin: 10% 2%;
+        border: 1px #78BE3C solid;
+    }
+    .c2 h2 {
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 32px;
+        font-family: 700;
+        margin: 3% 0;
+      }
+     
+    .logosec{
+        width: 100%;
+        float: left;
+    }
+    .sec1 {
+        width: 100%;
+        height: auto;
+        float: left;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3%;
+      }
+      
+      .gallery {
+        width: 22%;
+        float: left;
+        margin-top: 2%;
+      }
+      .gallery img {
+        width: 100%;
+      }
+      
+    .contact-sec{
+        width: 100%;
+        height: auto;
+        float: left;
+        background-color: #53565A;
+    }
+    .logo1{
+        width: 100%;
+        padding: 4% 0;
+    }
+    .logo1 img{
+        width: 80%;
+        display: block;
+        margin: 4% auto;
+        padding-left: 15%;
+    }
+    .logo2{
+        width: 100%;
+        padding: 3.5% 0;
+    }
+    .logo2 img{
+        width: 70%;
+       display: block;
+        margin: 4% auto;
+    }
+    .c3{
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    .c3 h3{
+        color: #fff;
+    font-weight: 500;
+        font-size: 26px;
+        padding: 2% 4%;
+    }
+    .btn2{
+        padding: 12px 38px;
+        background-color: #78BE3C;
+        color: #E0F0D2;
+        display: block;
+        margin: 0 auto;
+    }
+    .colr{
+        color:#78BE3C;
+    }
+    .service{
+        width: 100%;
+        height: auto;
+        float: left;
+        /* background-color: #fff; */
+        background-image: url(../images/bg-2.jpg);
+        background-size: cover;
+        position: relative;
+    }
+    .background-overlay1{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    .service h2{
+        color: #fff;
+    }
+    .boxsec{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .box1{
+        width: 80%;
+    height: auto;
+    background: url(../images/1.jpg);
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    margin: 2% 0;
+    padding-top: 2%;
+    }
+    .bgoverlay{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0, 0, .4)
+    }
  
+    .box1 p{
+        font-size: 16px;
+    }
+    .boxbtn{
+        padding: 11px 28px;
+    }
+    .backdrop{
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(2px);
+      visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+      .grey{
+        color:#ccc !important;
+      }
+    .popup{
+        width:95%;
+    }
+    .open-popup{
+    visibility: visible;
+    }
+    
+
+   
+     .con1{
+        width: 100%;
+        height: auto;
+        float: left;
+     }
+     .c4{
+        width: 100%;
+        height: auto;
+        float: left;
+        background-color: #78BE3C;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+     }
+     .c4 h4{
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        padding: 5% 2%;
+     }
+    .c4 p{
+        width: 100%;
+        margin: 2% 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 22px;
+        padding: 2% 6%;
+        line-height: 36px;
+    }
+
+     .c7{
+        width: 100%;
+        height: auto;
+        float: left;
+        background-color: #53565A;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+     }
+     .c7 h4{
+        width: 100%;
+        margin: 2% 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 36px;
+        text-align: center;
+        padding: 2% 5%;
+     }
+    .c7 p{
+        width: 100%;
+        margin: 2% 0;
+        color: #fff;
+        font-size: 18px;
+        padding: 2% 5%;
+    }
+     .reviews{
+        width: 100%;
+        height: auto;
+        float: left;
+        background-image: url(../images/removals-and-storage-london.jpg);
+        background-position: center;
+        position: relative;
+        top: 0;
+     }
+    
+     .c8{
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0;
+        padding: 0;
+     }
+     .c8 h4{
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        margin: 5% 0;
+        padding: 0 10%;
+     }
+     .c8 p{
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+        margin: 5% 0;
+        padding: 0 5%;
+     }
+     .c8 img{
+        display: block;
+        margin:3% auto;
+     }
+     .contact-us{
+        width: 100%;
+        float: left;
+        background: url(../images/antiques-removals-1.jpg);
+        background-size: cover;
+        position: relative;
+        top: 0;
+        margin-bottom: 10%;
+    }
+     .contact-form{
+        width: 90%;
+        float: left;
+        background-color: rgba(83, 86, 90);
+        position: relative;
+        z-index: 100;
+        margin: 5% 5%;
+        padding: 2% 0;
+        border: 2px #78BE3C solid;
+    }
+    .contact-form h2 {
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 32px;
+        font-family: 700;
+        margin: 3% 0;
+      }
+      input:focus,
+      .textarea1:focus {
+        outline: 0;
+      }
+      /* input,textarea{
+        color:#Fff;
+        padding-left: 2%;
+        font-size: 16px;
+      } */
+      .in{
+        width: 46%;
+        float: left;
+        margin-top: 2%;
+      }
+      .label{
+        color: #ccc;
+        float: left;
+        font-size: 14px;
+        padding-left: 12%;
+        margin-bottom: 2%;
+    } 
+     .input-sec{
+        width: 90%;
+        height: 35px;
+        margin:0% 13%;
+        padding-left: 2%;
+        color: #fff;
+        background: transparent;
+        border:  solid  1px #ffff;
+    } 
+    .message{
+        width: 87%;
+        float: left; 
+        margin-top: 2%;
+    }
+    .message label{
+        padding-left: 7% ;
+    }
+    .textarea1{
+        width: 100%;
+        height: 80px;
+        margin-top: 0%;
+        margin-left: 7%;
+        background: transparent;
+        border:  solid  1px #ffff;
+    }
+    .btn1{
+        padding: 12px 38px;
+        background-color: #78BE3C;
+        color: #E0F0D2;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 600;
+        border: #53565A;
+        border-radius: 20px;
+        margin-top: 5%;
+        margin-left: 36%;
+        cursor: pointer;
+    }
+}
