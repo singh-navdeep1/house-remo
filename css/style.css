@@ -607,7 +607,7 @@ visibility: visible;
  .c6{
     width: 50%;
     height: 700px;
-    background-image: url(../images/last\ banner\ \(2\).png);
+    background-image: url(../images/banner2.png);
     background-size: cover ;
     background-position: center;
     float: left;
@@ -616,7 +616,8 @@ visibility: visible;
     width: 100%;
     height: auto;
     float: left;
-    background-image: url(../images/last\ banner\ \(2\).png);
+    /* background-image: url(../images/last\ banner\ \(2\).png); */
+    background-image: url(../images/last\ banner2.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -776,7 +777,8 @@ margin-bottom: 2%;
   width: 100%;
   height: auto;
   float: left;
-  background-image: url(../images/removals-and-storage-london.jpg);
+  /* background-image: url(../images/last\ banner2.png); */
+  background-image: url(../images/last\ banner\ \(2\).png);
     background-position: center;
     position: relative;
     top:0;
