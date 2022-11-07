@@ -338,14 +338,15 @@ nav {
     /* height: 60px; */
 }
 .c3{
-    width: 42%;
+    width: 80%;
     float: left;
     margin-left: 8%;
 }
 .c3 h3{
     color: #fff;
 font-weight: 500;
-    font-size: 26px;
+    font-size: 44px;
+    /* text-align: center; */
     padding: 8% 10%;
 }
 .btn2{
@@ -1591,7 +1592,7 @@ margin-left: 15%;
     .c3 h3{
         color: #fff;
     font-weight: 500;
-        font-size: 20px;
+        font-size: 24px;
         padding: 2% 5%;
     }
     .btn2{
