@@ -11,7 +11,9 @@ html{
 a{
     text-decoration: none;
 }
-
+.back{
+  font-size: 80px !important;
+}
 .header-top{
   width: 100%;
   float: left;
@@ -1375,6 +1377,29 @@ margin-left: 15%;
     margin: 2% 0;
     display: inline-block;
     color: #000;
+  }
+
+  .about-us{
+    width: 100%;
+    height:auto;
+    float: left;
+    position: relative;
+    top: 0;
+    background-image: url(../images/last-banner-1.png);
+    background-position: center;
+  }
+  .a1{
+    width: 100%;
+    height: 600px;
+    float: left;
+  }
+  .a1 h1{
+    color: #fff;
+    font-size: 60px;
+    text-align: center !important;
+    text-transform: uppercase;
+    position: relative;
+    top: 0;
   }
  .show-desktop{
     display:inline-block;
