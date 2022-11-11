@@ -172,7 +172,7 @@ nav {
     position: absolute;
     top:0;
     left: 0;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
 }
 .inner{
     width: 1200px;
@@ -858,6 +858,40 @@ margin-bottom: 2%;
   color: #78BE3C !important;
  
 } 
+.areas-parent{
+  width: 100%;
+  height: auto;
+  float: left;
+  background-image: url(../images/House-Removals-3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top; 
+  position: relative;
+  top: 0;
+  
+}
+.areas-parent h2{
+  color: #fff;
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.areas-sec{
+  width: 19%;
+  height: auto;
+  /* background-color: blue; */
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 2% 0%;
+}
+.areas-sec p{
+  font-size: 18px;
+  color:#fff !important;
+  margin: 4% 0;
+}
 .testimonial{
   width: 100%;
   height: auto;
@@ -1076,11 +1110,11 @@ footer {
   width: 100%;
   height: auto;
   float: left;
-  background-color: #53565A;
+  background-color: #000;
 }
 
 #f1 {
-  width: 25%;
+  width: 28%;
   float: left;
   margin-top: 5%;
  
@@ -1136,10 +1170,11 @@ footer {
 .f2 {
   width: 35%;
   float: left;
+  height: 350px;
   padding-left: 8%;
   padding-top: 4%;
   margin-top: 2%;
-  border-left: 1px solid #000;
+  border-left: 1px solid #fff;
 }
 .f2 h3{
   color: #fff;
@@ -1390,11 +1425,14 @@ margin-left: 15%;
     top: 0;
     background-image: url(../images/last-banner-1.png);
     background-position: center;
+    background-size: cover;
   }
   .a1{
-    width: 100%;
+    width: 80%;
     height: 600px;
     float: left;
+    margin-left: 10%;
+    padding-top: 9%;
   }
   .a1 h1{
     color: #fff;
@@ -1403,6 +1441,25 @@ margin-left: 15%;
     text-transform: uppercase;
     position: relative;
     top: 0;
+    margin-bottom: 2%;
+  }
+  .a1 p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center ;
+    text-transform: capitalize;
+    position: relative;
+    top: 0;
+    margin-bottom: 2%;
+  }
+  .mail{
+    color:#fff;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0% !important;
+    margin-top: 10% !important;
+    font-size: 33px;
   }
  .show-desktop{
     display:inline-block;
